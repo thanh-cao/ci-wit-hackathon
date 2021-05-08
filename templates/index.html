@@ -16,9 +16,9 @@
                     placeholder="Email &#42;" required>
                 <input class="form-control mb-2" type="password" name="password" id="password"
                     aria-label="Password" placeholder="Password &#42;" required>
-                <a href="#contact-us" class="btn btn-primary" role="button">Sign In</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary" role="button">Sign In</a>
             </form>
-            <p class="muted">Not a user yet? <a href="sign-up.html">Sign in</a>
+            <p class="muted">Not a user yet? <a href="sign-up.html">Sign up</a>
             </p>
         </div>
     </div>
@@ -29,13 +29,17 @@
         <div class="col-12 col-md-6">
             <span>We empower</span>
             <h2 class="text-uppercase">Learning</h2>
-            <p>We host a series of events, from workshops to learn more about a range of skillsets to junior hackathons where you can put knowledge into practice, and build stuff.</p>
+            <p>
+                We host a series of events, from workshops to learn more about a range of skillsets to junior hackathons where you can put knowledge into practice, and build stuff.
+            </p>
         </div>
         <hr class="divider-short">
         <div class="col-12 col-md-6">
             <span>We empower</span>
             <h2 class="text-uppercase">Growth</h2>
-            <p>Find a mentor that can give you feedback along the way, a clear roadmap for development, and help you grow personally and professionally.</p>
+            <p>
+                Find a mentor that can give you feedback along the way, a clear roadmap for development, and help you grow personally and professionally.
+            </p>
         </div>
     </div>
 </section>
