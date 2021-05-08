@@ -26,8 +26,10 @@
     <header>
         <nav id="home" class="navbar navbar-expand-md fixed-top px-3">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo/logo-icon.png" alt="Command Girl logo" height="60" />
-                <span class="logo-name">Command Girl</span>
+                <div class="d-flex align-items-center">
+                    <img src="assets/img/logo/logo-icon.png" alt="Command Girl logo" height="60">
+                    <div class="logo-name ml-2">Command<br>Girl</div>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +38,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-end align-items-md-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
@@ -93,13 +95,17 @@
         </div>
         <hr />
         <!-- Footer-->
-        <footer>
+        <footer class="bg-info mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="col-6">
+                        <img src="assets/img/logo/logo-icon.png" alt="Command Girl logo" height="95">
+                    </div>
+                    <div class="col-6">
+                        <h5 class="text-uppercase footer-heading text-center">Get Connected</h5>
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="www.twitter.com">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -107,7 +113,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="www.facebook.com">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -115,7 +121,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#!">
+                                <a href="www.github.com">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -123,7 +129,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <p class="copyright text-muted">Copyright &copy; The Matrix Team 2021</p>
                     </div>
                 </div>
             </div>
