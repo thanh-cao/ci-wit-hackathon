@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Page Header-->
+    <section class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading"><br>
+                        <h1>Contact Us</h1>
+                        <hr />
+                        <h3>Have questions? We have answers.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work.-->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address!-->
+                <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally!-->
+                
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain"><br>
+                <input class="form-control"  type="text" name="name" placeholder="Name" required ><br>
+                <input class="form-control"  type="text" name="mail" placeholder="Email" required ><br>
+                <label for="mentor">Choose your Mentor</label>
+                    <select class="form-control" id="mentor" name="mentor">
+                    <option value="evka">Evka</option>
+                    <option value="kim">Kim</option>
+                    <option value="louis">Louis</option>
+                    <option value="thanh">Thanh</option>
+                    <option value="vanessa">Vanessa</option>
+                    </select><br>
+                <input class="form-control"  type="text" name="message" size="50" placeholder="Message" required ><br>
+                <input type="submit" value="Send" button class="btn btn-primary" id="sendMessageButton">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
