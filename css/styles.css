@@ -94,3 +94,39 @@ section {
 .hero-section .container {
   z-index: 1;
 }
+
+/* footer */
+.footer-wrapper {
+  background: linear-gradient(90deg, rgba(110,255,250,1) 0%, rgba(217,120,255,1) 100%);
+  z-index: 1;
+}
+.footer-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: -1;
+}
+.logo-name--footer {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 800;
+}
+.social-links i {
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 12px 0;
+  text-align: center;
+  line-height: 7px;
+}
+.social-links i:hover {
+  background-color: #d978ff;
+  border-color: #d978ff;
+}
