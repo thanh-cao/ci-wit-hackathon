@@ -9,16 +9,12 @@
     <title>Command Girl</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png" />
     <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-        rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
@@ -27,8 +23,10 @@
     <header>
         <nav id="home" class="navbar navbar-expand-md fixed-top px-3">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo/logo-icon.png" alt="Command Girl logo" height="60" />
-                <span class="logo-name">Command Girl</span>
+                <div class="d-flex align-items-center">
+                    <img src="assets/img/logo/logo-icon.png" alt="Command Girl logo" height="60">
+                    <div class="logo-name ml-2">Command<br>Girl</div>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +35,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-end align-items-md-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
@@ -74,7 +72,7 @@
                             aria-label="Password" placeholder="Password &#42;" required>
                         <a href="#contact-us" class="btn btn-primary" role="button">Sign In</a>
                     </form>
-                    <p class="muted">Not a user yet? <a href="sign-up.html">Sign in</a>
+                    <p class="muted">Not a user yet? <a href="sign-up.html">Sign up</a>
                     </p>
                 </div>
             </div>
@@ -85,13 +83,15 @@
                 <div class="col-12 col-md-6">
                     <span>We empower</span>
                     <h2 class="text-uppercase">Learning</h2>
-                    <p>We host a series of events, from workshops to learn more about a range of skillsets to junior hackathons where you can put knowledge into practice, and build stuff.</p>
+                    <p>We host a series of events, from workshops to learn more about a range of skillsets to junior
+                        hackathons where you can put knowledge into practice, and build stuff.</p>
                 </div>
                 <hr class="divider-short">
                 <div class="col-12 col-md-6">
                     <span>We empower</span>
                     <h2 class="text-uppercase">Growth</h2>
-                    <p>Find a mentor that can give you feedback along the way, a clear roadmap for development, and help you grow personally and professionally.</p>
+                    <p>Find a mentor that can give you feedback along the way, a clear roadmap for development, and help
+                        you grow personally and professionally.</p>
                 </div>
             </div>
         </section>
@@ -101,7 +101,8 @@
             <h2>Partner Up?</h2>
             <p>Want to join us in making tech world even more awesome? Let us know what you have in mind and take it
                 from there.</p>
-            <button type="button" data-toggle="modal" data-taget="#partnerModal" class="btn btn-primary">Give us a shout</button>
+            <button type="button" data-toggle="modal" data-taget="#partnerModal" class="btn btn-primary">Give us a
+                shout</button>
         </section>
         <!-- end partner up -->
         <!-- Partner up modal-->
@@ -119,8 +120,9 @@
                         <form id="partnerContactForm">
                             <input class="form-control mb-2" type="text" name="partnerName" id="partnerName"
                                 aria-label="Full name" placeholder="Name &#42;" required>
-                            <input class="form-control mb-2" type="text" name="partnerOrganization" id="partnerOrganization"
-                                aria-label="Partner Organization" placeholder="Company / Organization &#42;" required>
+                            <input class="form-control mb-2" type="text" name="partnerOrganization"
+                                id="partnerOrganization" aria-label="Partner Organization"
+                                placeholder="Company / Organization &#42;" required>
                             <input class="form-control mb-2" type="tel" name="phone" id="phone"
                                 aria-label="Phone number" placeholder="Phone &#42;" required>
                             <input class="form-control mb-2" type="email" name="email" id="email"
@@ -137,50 +139,50 @@
             </div>
         </div>
         <!-- / end Partner up modal -->
-<footer class="bg-info mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <img src="assets/img/logo/logo-icon.png" alt="Command Girl logo" height="60">
+        <footer class="bg-info mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="assets/img/logo/logo-icon.png" alt="Command Girl logo" height="60">
+                    </div>
+                    <div class="col-6">
+                        <h5 class="text-uppercase footer-heading">Social</h5>
+                        <ul class="list-inline social-links">
+                            <li class="list-inline-item mr-0">
+                                <a href="http://www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f" aira-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-0">
+                                <a href="http://www.twitter.com" target="_blank">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-0">
+                                <a href="http://www.linkedin.com" target="_blank">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                    <span class="sr-only">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-0">
+                                <a href="http://www.instagram.com" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-0">
+                                <a href="http://www.youtube.com" target="_blank">
+                                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    <span class="sr-only">Youtube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-6">
-                    <h5 class="text-uppercase footer-heading">Social</h5>
-                    <ul class="list-inline social-links">
-                        <li class="list-inline-item mr-0">
-                            <a href="http://www.facebook.com" target="_blank">
-                                <i class="fab fa-facebook-f" aira-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                                </a>
-                            </li>
-                        <li class="list-inline-item mr-0">
-                            <a href="http://www.twitter.com" target="_blank">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mr-0">
-                            <a href="http://www.linkedin.com" target="_blank">
-                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                                <span class="sr-only">LinkedIn</span>
-                                </a>
-                            </li>
-                        <li class="list-inline-item mr-0">
-                            <a href="http://www.instagram.com" target="_blank">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                                </a>
-                            </li>
-                        <li class="list-inline-item mr-0">
-                            <a href="http://www.youtube.com" target="_blank">
-                                <i class="fab fa-youtube" aria-hidden="true"></i>
-                                <span class="sr-only">Youtube</span>
-                                </a>
-                            </li>
-                    </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+        </footer>
 
 
 
