@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -11,7 +13,7 @@ body {
 
 /* colors, headings, buttons, spacing */
 .btn-primary {
-  background-color: #6EB9FF;
+  background-color: #6eb9ff;
   border-color: transparent;
   color: white;
   text-transform: uppercase;
@@ -21,16 +23,16 @@ body {
   font-weight: 600;
 }
 .btn-primary:hover {
-  background-color: #D978FF;
+  background-color: #d978ff;
   border-color: transparent;
-  color: #6EFFFA;
+  color: #6efffa;
 }
 h2 {
-  color: #6EB9FF;
+  color: #6eb9ff;
   font-weight: 600;
 }
 h3 {
-  color: #6EB9FF;
+  color: #6eb9ff;
   font-weight: 600;
 }
 section {
@@ -38,27 +40,41 @@ section {
 }
 
 /* navbar */
+.logo-name {
+  background: -webkit-linear-gradient(90deg,rgba(110, 255, 250, 1) 0%,rgba(217, 120, 255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 800;
+}
 .navbar {
   background-color: white;
 }
 .navbar-toggler i {
-  color: #6EB9FF;
+  background: -webkit-linear-gradient(90deg,rgba(110, 255, 250, 1) 0%,rgba(217, 120, 255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
+  padding: 10px;
+  border: 2px solid #6eb9ff;
+  border-radius: 5px;
 }
 .navbar-nav .nav-link {
-  color: #6EB9FF;
+  color: #6eb9ff;
   font-weight: 600;
 }
 .navbar-nav .nav-link:hover {
-  color: #D978FF;
+  color: #d978ff;
 }
 .nav-link.active {
-  border-bottom: 1px solid #D978FF;
+  color: #d978ff;
+  border-bottom: 1px solid #d978ff;
 }
 
 /* jumbotron */
 .hero-section .jumbotron {
-  background: url('../assets/img/home-bg.jpg') bottom center / cover no-repeat;
+  background: url("../assets/img/home-bg.jpg") bottom center / cover no-repeat;
   background-attachment: fixed;
   position: relative;
   height: 100vh;
@@ -72,7 +88,7 @@ section {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: radial-gradient(at center center, #FDE28B 0%, #181818 100%);
+  background-image: radial-gradient(at center center, #fde28b 0%, #181818 100%);
   opacity: 0.6;
 }
 .hero-section .container {

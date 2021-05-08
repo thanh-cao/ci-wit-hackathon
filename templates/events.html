@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="masthead unhide" style="background-image: url('assets/img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-heading">
+                    <h1>All Upcoming Events</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Post Content-->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                {% for event in events %}
+                    <h2 class="section-heading">{{ event.name }}</h2>
+                    <p>{{ event.description }}</p>
+                    <h6>Location: {{ event.location }}</h6>
+                    <h6>Date: {{ event.date }}</h6>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</article>
+<hr />
+{% endblock %}
