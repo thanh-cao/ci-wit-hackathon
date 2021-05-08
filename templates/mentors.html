@@ -48,11 +48,23 @@
                     <div class="col-12 col-md-6">
                         <h3>{{ mentor.name }}</h3>
                         <p>{{ mentor.bio }}</p>
+                        <h5>Can help with:</h5>
+                        <p>{{ mentor.can_help_with }}</p>
+                        <h5>Ideal mentee:</h5>
+                        <p>{{ mentor.ideal_mentee }}</p>
                     </div>
                 {% else %}
                     <div class="col-12 col-md-6">
                         <h3>{{ mentor.name }}</h3>
                         <p>{{ mentor.bio }}</p>
+                        <h5>Can help with:</h5>
+                        <p>
+                            {% for skill in mentor.skills %}
+                                {{ skill }}{{ ";" if not loop.last else "" }}
+                            {% endfor %}
+                        </p>
+                        <h5>Ideal mentee:</h5>
+                        <p>{{ mentor.ideal_mentee }}</p>
                     </div>
                     <div class="col-12 col-md-6">
                         <h3>Mentor {{ mentor.mentor_number }} image</h3>
